@@ -13,7 +13,7 @@ const	gulp = require('gulp'),
 		reload = browserSync.reload,
 		checkFilesize = require("gulp-check-filesize"),
 		prettify = require('gulp-jsbeautifier');
-// plugins for rollup		
+// plugins for rollup
 const	rollup = require('rollup-stream'),
 		source = require('vinyl-source-stream'),
 		buffer = require('vinyl-buffer'),
@@ -37,7 +37,7 @@ const   eslint = require('gulp-eslint'),
 	 	html5Lint = require('gulp-html5-lint');
 // plugins for documentation
 const 	jsdoc = require('gulp-jsdoc3');
-//-----------------------------------------------------Js 
+//-----------------------------------------------------Js
 /* cjs - nodejs
  * iife - browser
  *  */
@@ -94,7 +94,7 @@ const onError = function (err) {
 };
 //-------------------------------------------------Servers
 //------------------------------Livepreload
-gulp.task('server', function () {  
+gulp.task('server', function () {
     browserSync(configServerTunnel);
 });
 //------------------------------Local Server
@@ -133,31 +133,31 @@ gulp.task('fontsSync', function () {
 // });
 //-----------------------------------------------------Compilers
 // pug > html
-gulp.task('pug', function () {		
-	gulp.src(path.src.pug)		 
-		.pipe(plumber({errorHandler: onError}))      
+gulp.task('pug', function () {
+	gulp.src(path.src.pug)
+		.pipe(plumber({errorHandler: onError}))
 		.pipe(pug({pretty: true}))
 		.pipe(gulp.dest(path.build.html))			  // output html
-        .pipe(reload({stream: true}));               
+        .pipe(reload({stream: true}));
 });
 // scss > сss
 gulp.task('sass', function () {
 	gulp.src(path.src.scss)
-		.pipe(sass())						
+		.pipe(sass())
 		.pipe(inlineimage())
-		.pipe(plumber({errorHandler: onError}))      
-		.pipe(prefix('last 3 versions'))
+		.pipe(plumber({errorHandler: onError}))
+    .pipe(prefix('last 3 versions'))
 		.pipe(gulp.dest(path.build.css))	// output css
-        .pipe(reload({stream: true}));      
+        .pipe(reload({stream: true}));
 });
 //js(es6) > js(es3)
 gulp.task('js', rollupJS(nameMainSrcfile, {
 	basePath: path.src.js,
-	format: typeModules,				
+	format: typeModules,
 	distPath: path.build.js,
 	sourcemap: sourceMap
   }));
-//------------------------------------------------Building prodaction 
+//------------------------------------------------Building prodaction
 //------------------------------clean folder `build`
 // gulp.task('cleanBuildDir', function (cb) {
 // 	rimraf(path.build.html, cb);
@@ -196,7 +196,7 @@ gulp.task('htmlBuild', function () {
 gulp.task('jsBuild', function () {
 	return gulp.src(path.build.js + '**/*.js')
 		.pipe(notify({ message: messageBuildJs, onLast: true  }))
-		.pipe(plumber()) 							  
+		.pipe(plumber())
 		.pipe(uglify())
 		.pipe(gulp.dest(path.prodaction.js))
 	});
@@ -206,8 +206,8 @@ gulp.task('cssBuild', function () {
 		// .pipe(purify([outputDir + 'js/**/*', outputDir + '**/*.html'])) // очищение ??
 	gulp.src(path.build.css)
 		.pipe(notify({ message: messageBuildCss, onLast: true  }))
-		.pipe(plumber()) 
-	return gulp.src(path.build.css)							  
+		.pipe(plumber())
+	return gulp.src(path.build.css)
         .pipe(uncss({
            html: [path.prodaction.uncssHTML]
         }))
@@ -259,16 +259,16 @@ gulp.task('test:jasmine', () =>
 gulp.task('jsDoc', function (cb) {
     gulp.src([path.docs.jsDoc, `${path.build.js}index.js`], {read: false})
     .pipe(jsdoc(jsDocConfig, cb));
-});  
+});
 /******************************************************************
 
 							TASKS
 
 *******************************************************************/
 // for development
-gulp.task('default', ['pug', 'sass', 'js', 'imageSync', 'fontsSync', 'watch', 'browser-sync']); 
+gulp.task('default', ['pug', 'sass', 'js', 'imageSync', 'fontsSync', 'watch', 'browser-sync']);
 // for production
-gulp.task('build', ['fontsBuild', 'htmlBuild', 'jsBuild', 'cssBuild'] ); //, 
-gulp.task('validation', ['validationHtml', 'lintJs']); 
+gulp.task('build', ['fontsBuild', 'htmlBuild', 'jsBuild', 'cssBuild'] ); //,
+gulp.task('validation', ['validationHtml', 'lintJs']);
 // добавить тесты,документацию
 
