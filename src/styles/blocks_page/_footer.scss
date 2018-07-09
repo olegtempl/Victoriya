@@ -4,19 +4,19 @@
 */
 // раскидать с пометкой стики футер
 
-*, *:before, *:after{
-  box-sizing: border-box;
-  padding: 0; margin: 0;
+
+// // sticky footer
+// @import 'footer/sticky_footer';
+footer {
 }
 
-html, body{background: rgb(236, 240, 241);}
+// .content{
+//   width: 850px;
+//   margin: auto;
+//   margin-bottom: 550px; /* Same height as footer */
+//   padding: 100px 0;
+// }
 
-.content{
-  width: 850px;
-  margin: auto;
-  margin-bottom: 350px; /* Same height as footer */
-  padding: 100px 0;
-}
 
 .fixed_footer{
   width: 100%;
@@ -27,12 +27,12 @@ html, body{background: rgb(236, 240, 241);}
 }
    .fixed_footer p{
     color: #696969;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
             column-count: 2;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
             column-gap: 50px;
     font-size: 1em;
     font-weight: 300;
   }
-
-footer {
-
-}
