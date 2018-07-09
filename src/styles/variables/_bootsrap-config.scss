@@ -1,14 +1,11 @@
-//
-//			 MEDIA QUERIES BREAKPOINTS
-//
+/*
+  MEDIA QUERIES BREAKPOINTS
+*/
 @import 'media-queries-breakpoints.scss';
 
-
-
-//
-//  		BOOTSTRAP GRID SYSTEM CONFIG
-//
-
+/*
+  BOOTSTRAP GRID SYSTEM CONFIG
+*/
 // Number of columns in the grid.
 $grid-columns:              12;
 
@@ -21,9 +18,9 @@ $grid-float-breakpoint:     $screen-sm-min;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
-
+//
 // CAUTION: This container sizes are deprecated. Use $container-maxwidth instead.
-
+//
 // Small screen / tablet
 $container-tablet:             auto; // (720px + $grid-gutter-width);
 //** For `$screen-sm-min` and up.

@@ -2,7 +2,7 @@
    "src": {
       "pug": "src/pug/**/*.pug",
       "js": "src/js/",
-      "scss": "src/styles/victorya.scss",
+      "scss": "src/styles/index.scss",
       "images": "src/images/",
       "fonts": "src/fonts/"
    },

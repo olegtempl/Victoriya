@@ -1,27 +1,16 @@
-//=====================================
-// 
-//                MAIN
-// 
-//=====================================
-
-//         DEFAULT
-@import 'default-main.scss';
-
-//
-//		VARIABLES_MAIN
-//
-
-
-
-
-
-//
-//		STYLES_MAIN
-//
+/*
+ * Main
+ *
+*/
+@import 'main/default-main.scss';
+@import 'main/_block_1.scss';
+@import 'main/_block_2.scss';
+@import 'main/_block_3.scss';
+@import 'main/_block_4.scss';
 
 
 main {
 
-	
+
 }
 
