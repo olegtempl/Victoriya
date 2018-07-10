@@ -1,0 +1,20 @@
+// Square form
+@import 'geometry/square';
+@import 'geometry/rectangle';
+@import 'geometry/trapezoid';
+@import 'geometry/parallelogram';
+// Circle form
+@import 'geometry/circle';
+@import 'geometry/oval';
+// Polygon form
+@import 'geometry/pentagon';
+@import 'geometry/hexagon';
+@import 'geometry/octagon';
+// Triangles form
+@import 'geometry/triangle-topleft';
+@import 'geometry/triangle-topright';
+@import 'geometry/triangle-bottomright';
+@import 'geometry/triangle-bottomleft';
+@import 'geometry/triangle-up';
+@import 'geometry/triangle-down';
+

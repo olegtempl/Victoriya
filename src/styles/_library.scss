@@ -2,7 +2,7 @@
   Library
 */
 
-@import 'element_page/utils/my_beatify_elements'; // там мои стили перделки для украшения фрэймоворка
+// @import 'element_page/utils/my_beatify_elements'; // там мои стили перделки для украшения фрэймоворка
 
 @import 'element_page/utils/mixins';
 @import 'element_page/placeholders';
@@ -25,7 +25,10 @@
 @import 'element_page/typography';
 
 
-@import 'element_page/citates';
+
+@import 'element_page/custom/timeline';
+@import 'element_page/custom/geometry';
+// @import 'element_page/custom/citates';
 
 // @import 'element_page/';
 // @import 'element_page/';
@@ -45,12 +48,9 @@
   BLOCKS(SECTION)_PAGE
 */
 
-@import 'blocks_page/footer';
+// @import 'blocks_page/footer';
 @import 'blocks_page/header';
-@import 'blocks_page/main';
-@import 'blocks_page/sidebar';
+// @import 'blocks_page/main';
+// @import 'blocks_page/sidebar';
 // @import 'blocks_page/';
-
-
-
 
