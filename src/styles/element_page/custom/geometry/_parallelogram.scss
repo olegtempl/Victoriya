@@ -2,7 +2,8 @@
 $red: red;
 
 .parallelogram {
-	width: 150px;
+	width: 180px;
 	height: 100px;
-	background: $red;
+  background: $red;
+  transform: skew(20deg);
 }

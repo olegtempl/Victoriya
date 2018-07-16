@@ -1,10 +1,10 @@
 //colors
 $red: red;
+$default-size: 100px;
 
 .oval {
-	width: 200px;
-	height: 100px;
+  width: $default-size * 2;
+  height: $default-size;
 	background: $red;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
 }
