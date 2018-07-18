@@ -22,12 +22,12 @@ section {
   display: block;
 }
 
-// @if $border-box == true {
-//   * {
-//     &,
-//     &:before,
-//     &:after {
-//       box-sizing: border-box;
-//     }
-//   }
-// }
+@if $border-box == true {
+  * {
+    &,
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+}
