@@ -1,8 +1,8 @@
 /**
- *                BUTTONS 
+ *                BUTTONS
  */
 
-//  Менять размер кнопки на 59\61 строке,и далее  по этому же принципу. 
+//  Менять размер кнопки на 59\61 строке,и далее  по этому же принципу.
 
 
 // reset default buttons
@@ -88,8 +88,6 @@ button {
       font-size: map-get($button-meta, fontSize);
       line-height: #{map-get($button-meta, lineHeight)}em;
       padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
-
-
       @include breakpoint(bp-large) {
         $button-meta: map-get($button-sizes, hugeLg);
 
@@ -97,9 +95,7 @@ button {
         font-size: map-get($button-meta, fontSize);
         line-height: #{map-get($button-meta, lineHeight)}em;
         padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
-
       }
-
       i {
         font-size: 20px;
       }

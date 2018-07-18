@@ -1,0 +1,12 @@
+//colors
+$default-size: 100px;
+$red: red;
+
+.circle  {
+  background: $red;
+	border-radius: 50px;
+  width: $default-size ;
+  height: $default-size ;
+}
+
+

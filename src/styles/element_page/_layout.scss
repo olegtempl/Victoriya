@@ -19,6 +19,9 @@
 
 }
 
+/*
+  Containers
+*/
 .container {
   margin: 0 auto;
   max-width: $container-maxwidth;
@@ -31,7 +34,6 @@
     padding-right: $grid-gutter-width;
   }
 }
-
 .container-md {
   margin: 0 auto;
   max-width: $container-medium-maxwidth;
@@ -43,7 +45,6 @@
     padding-right: $grid-gutter-width;
   }
 }
-
 .container-sm {
   margin: 0 auto;
   max-width: $container-small-maxwidth;
@@ -55,17 +56,15 @@
     padding-right: $grid-gutter-width;
   }
 }
-
 .full-width {
   @extend %full-width;
 }
-
-// separator
+/*
+ Separator
+*/
 .separator {
   border-bottom: 1px solid $border-color;
 }
-
-
 // Specific selector for mobonaut. Must delete ASAP.
 .main-wrap {
   overflow: hidden;
@@ -76,17 +75,16 @@
     padding-left: 250px;
   }
 }
+// // Specific selector for mobonaut & appszoom. Must delete ASAP.
+// .main-content {
+//   float: right;
+//   margin-left: 0;
+//   overflow: hidden;
+//   position: relative;
+//   width: 100%;
 
-// Specific selector for mobonaut & appszoom. Must delete ASAP.
-.main-content {
-  float: right;
-  margin-left: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    clear: none;
-  }
-}
+//   &::before,
+//   &::after {
+//     clear: none;
+//   }
+// }

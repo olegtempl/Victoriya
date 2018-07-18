@@ -1,8 +1,8 @@
 {
    "src": {
-      "pug": "src/pug/**/*.pug",
+      "pug": "src/pug/*.pug",
       "js": "src/js/",
-      "scss": "src/styles/victorya.scss",
+      "scss": "src/styles/**/*.scss",
       "images": "src/images/",
       "fonts": "src/fonts/"
    },
@@ -16,21 +16,23 @@
    "prodaction": {
       "html": "prodaction/",
       "js": "prodaction/js/",
-      "css": "prodaction/styles/victorya.min.css",
+      "css": "prodaction/styles/",
       "images": "prodaction/images/",
-      "fonts": "prodaction/fonts/",
-      "uncssHTML": "prodaction/**/*.html"
+      "fonts": "prodaction/fonts/"
    },
    "watch": {
-      "pug": "src/pug/**/*.pug",
+      "pug": "src/pug/**/**/*.pug",
       "js": "src/js/**/*.js",
-      "scss": "src/styles/**/**/**/*.scss",
+      "scss": "src/styles/**/*.scss",
       "images": "src/images/**/*",
       "fonts": "src/fonts/**/*"
    },
    "tests": {
-      "mocha": "tests/mocha/spec.js",
-      "jasmine": "tests/jasmine/spec.js"
+      "mocha": "test/mocha/spec.js",
+      "jasmine": "test/jasmine/spec.js",
+      "gui": "test/browser/gui/spec_userstory.js",
+      "screenshots": "test/browser/gui/spec_screenshots.js",
+      "pageSpeed": "test/browser/page_speed/spec.js"
    },
    "validation": {
       "html": "build/*.html",
@@ -44,8 +46,24 @@
       "serverLive": "./configs/serverLivereload.json",
       "serverTunnel": "./configs/serverTunnel.json"
    },
+   "commands": {
+    "serverSelenium": "./configs/shell_commands/serverSelenium.js",
+    "runCmd": "./configs/shell_commands/runCmd.js",
+    "guiTests": "./configs/shell_commands/guiTests.js",
+    "guiSreenshots": "./configs/shell_commands/takeGuiSreenshots.js",
+    "pageSpeed": "./configs/shell_commands/pageSpeed.js"
+   },
    "docs": {
-      "jsDoc": "docs/jsDoc/README.md"
-   }
+      "jsDoc": "docs/jsDoc/README.md",
+      "scrennshotesWebSite": "prodaction/SCREENSHOTS/",
+      "scrennshotesProjectElp": "docs/images/screenshots"
+   },
+   "scrennshotes": {
+    "mainPage":"prodaction/SCREENSHOTS/main_page",
+    "aboutPage":"prodaction/SCREENSHOTS/about_page",
+    "contactsPage":"prodaction/SCREENSHOTS/contacts_page"
+   },
+   "messages": "./configs/messages.json"
+
 }
 

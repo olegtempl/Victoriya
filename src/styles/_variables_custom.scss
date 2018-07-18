@@ -1,17 +1,15 @@
-//=====================================
-//
-//				BACKGROUND_COLORS
-//
-//=====================================
-
-//
-//      background-colors_blocks_in_page
-//
+/*
+  Background colors
+*/
+/*
+  Background-colors blocks in page
+*/
 
 //  body
 $color-bg-body:                 #2e4865;
 //  header
-$color-bg-header:               #2e4865;
+$color-bg-header:               rgba(91, 192, 222, 1);
+$color-bd-nav:                  rgba(91, 192, 222, 1);
 //  sidebar
 $color-bg-sidebar:              #2e4865;
 //  main
@@ -19,19 +17,9 @@ $color-bg-main:                 #2e4865;
 //  footer
 $color-bg-footer:               #2e4865;
 
-
-
-//=====================================
-//
-//				BRAND_COLORS
-//
-//=====================================
-
-
-//
-//      Brand colors
-//
-
+/*
+  Brand colors
+*/
 $brand-primary:         #1abc9c;
 $brand-secondary:       #9b59b6;
 $brand-dark:            #18232f;
@@ -47,10 +35,9 @@ $gray-light:            #edf3f6;
 $deep-blue:             #171722; // Deprecated
 $white:                 #ffffff;
 
-//
-//      Background colors MAP
-//
-
+/*
+  Background colors MAP
+*/
 $background-color-map: (
   'primary':              $brand-primary,
   'dark':                 $brand-dark,
@@ -71,9 +58,9 @@ $border-color:          #465f78;
 $shadow-color:          rgba(0, 0, 0, .2);
 $box-shadow:            0 0 5px $shadow-color;
 
-//
-//      Text colors
-//
+/*
+  Text colors
+*/
 $text-color:            $white;       // deprecated. Use $text-body instead.
 $text-body:             $text-color;
 $text-gray:             #969da6;
@@ -90,13 +77,9 @@ $text-color-map: (
   warning:              $color-warning
 );
 
-//=====================================
-//
-//				COLOR_COMPONENTS
-//
-//=====================================
-
-
+/*
+  Colors components
+*/
 // Tags
 $tag-text-color:        $text-body;
 $tag-bg-color:          $brand-light;
@@ -108,9 +91,6 @@ $button-text-color:     $text-body; // default color for buttons
 $button-border-color:   $color-bg-body;
 $button-border-radius:  2em;
 
-
-
-
 // Forms
 $form-bg-color:               $brand-light;
 $form-text-color:             $text-body;
@@ -118,88 +98,27 @@ $form-text-color:             $text-body;
 // Loading spinner
 $loading-spinner-bg:          $white;
 
-
 // Tables
 $table-bg-color:        $brand-light;
 $table-header-bg-color: $color-bg-body;
 $table-text-color:      $text-body;
 
-//=====================================
-//
-//        CUSTOM_VARIABLES
-//
-//=====================================
-
-
-
-
-
-
-
-
-
-
-
-//=====================================
-//
-//        IMPORT_VARIABLES-ELEMENTS
-//
-//=====================================
-
-//
-//       BOOTSTRAP GRID SYSTEM CONFIG
-//
+/*
+  IMPORT variables-elements
+*/
+//       Bootrap grid system config
 @import 'variables/bootsrap-config.scss';
-
-//
-//       TYPOGRAPHY
-//
+//       Typography
 @import 'variables/typography.scss';
-
-//
 //       Social colors\TEXT-color map
-//
 @import 'variables/social_and_text_color-map.scss';
-
-//
-//       BUTTON-SIZES
-//
+//       Button sizes
 @import 'variables/button-sizes.scss';
-
-//
-//       DIV-CONTAINERS
-//
+//       Div-containers
 @import 'variables/div-containers.scss';
-
-//
-//       PAGINATOR
-//
+//       Paginator
 @import 'variables/paginator.scss';
-
-
-//
-//       RAITING
-//
+//       Raiting
 @import 'variables/raiting.scss';
-
-//
-//       BADGES
-//
+//       Badges
 @import 'variables/badges.scss';
-
-
-//
-//       
-//
-// @import 'variables/ ';
-
-
-//
-//       
-//
-// @import 'variables/ ';
-
-//
-//       
-//
-// @import 'variables/ ';

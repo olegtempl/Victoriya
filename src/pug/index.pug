@@ -1,58 +1,42 @@
-doctype html
-html(lang="ru")
-    head
-        title Victorya, easy and simple, in memory forever.
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0')
-        //  CSS stylesheets
-        link(rel='stylesheet', type='text/css', media='all', href='styles/victorya.min.css')
-        // Font
-        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:400,700,300', type='text/css')
-        //  icons
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
-    body
-        header
-        	include header/header.pug
-        //- main
-        main
-            .container
-            //- сюда ВСТАВЛЯЮТЬСЯ БЛОКИ
-            
-            
-            <!-- DEFAULT_BASIC ELEMENTS -->
-            include main/default_elements/text.pug
-            include main/default_elements/buttons.pug
-            include main/default_elements/typography_sizes.pug
-            include main/default_elements/forms.pug
-            include main/default_elements/tables.pug
-            include main/default_elements/tabs.pug
-            include main/default_elements/tags.pug
-            include main/default_elements/pagination.pug
-            include main/default_elements/badges.pug
-            include main/default_elements/raiting.pug
-            include main/default_elements/images.pug
-            include main/default_elements/aligners.pug
-            include main/default_elements/loaders.pug
-            include main/default_elements/colors.pug
-            include main/default_elements/full_width_bars.pug
-            include main/default_elements/message_bars.pug
-            include main/default_elements/containers.pug
-            include main/default_elements/borders.pug
+include ./templates/head
+body
+	header
+		include header/header
+	//- main
+	main
+		//- Navigation brow
+		include ./templates/nav
+		.content
+			// сюда ВСТАВЛЯЮТЬСЯ БЛОКИ
+			//- Default basic elements
+			//- include main/default_elements/text
+			//- include main/default_elements/buttons
+			//- include main/default_elements/typography_sizes
+			//- include main/default_elements/forms
+			//- include main/default_elements/tables
+			//- include main/default_elements/tabs
+			//- include main/default_elements/tags
+			//- include main/default_elements/pagination
+			//- include main/default_elements/badges
+			//- include main/default_elements/raiting
+			//- include main/default_elements/images
+			//- include main/default_elements/aligners
+			//- include main/default_elements/loaders
+			//- include main/default_elements/colors
+			//- include main/default_elements/full_width_bars
+			//- include main/default_elements/message_bars
+			//- include main/default_elements/containers
+			//- include main/default_elements/borders
+			// Custom elements
+			//- include main/custom_elements/geometry
+			include main/custom_elements/tooltipe
+			//- include main/custom_elements/citate
+		//- include main/custom_elements/timeline
+			//- include main/default_elements/js_no_touch
+			//- КОНЕЦ ГЛАВНОГО МЕНЮ
+	aside
+		aside
 
-
-
-            <!-- CUSTOM ELEMENTS -->
-            include main/custom_elements/citate.pug
-
-
-
-            include main/default_elements/js_no_touch.pug
-           
-            //- КОНЕЦ ГЛАВНОГО МЕНЮ
-
-        aside
-        	aside.pug 
-        
-        //- footer
-        footer
-            include footer/footer.pug
+	//- footer
+	footer
+		include footer/footer
