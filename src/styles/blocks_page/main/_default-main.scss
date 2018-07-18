@@ -1,8 +1,6 @@
-
-//
-//        DEFAULT
-//
-
+/*
+  DEFAULT
+*/
 *,
 *::after,
 *::before {
@@ -12,7 +10,7 @@
 }
 
 // html, body{background: rgb(236, 240, 241);}
-html, body {
+body {
   background-color: $color-bg-body;
   // font-weight: normal;
   // min-height: 100%;
@@ -31,7 +29,6 @@ img {
 strong {
   font-weight: 600;
 }
-
 
 pre {
   margin-bottom: 2em !important;
