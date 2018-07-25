@@ -1,10 +1,11 @@
-//colors
-$red:  red;
+$bg-color-trapezoid:  pink;
+$width-trapezoid: 100px;
+$height-trapezoid: 100px;
 
 .trapezoid {
-	border-bottom: 100px solid $red;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
+	border-bottom: $width-trapezoid solid $bg-color-trapezoid;
+	border-left: $height-trapezoid solid transparent;
+	border-right: $height-trapezoid solid transparent;
 	height: 0;
-	width: 100px;
+	width: $width-trapezoid;
 }

@@ -1,9 +1,10 @@
-//colors
-$red:  red;
+$bg-color-triangle:  pink;
+$width-triangle: 100px;
+$height-triangle: 100px;
 
 .triangle-topright {
 	width: 0;
 	height: 0;
-	border-top: 100px solid $red;
-	border-left: 100px solid transparent;
+	border-top: $width-triangle solid $bg-color-triangle;
+	border-left: $height-triangle solid transparent;
 }

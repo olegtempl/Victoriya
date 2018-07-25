@@ -1,9 +1,9 @@
-//colors
 $default-size: 100px;
-$red: red;
+$bg-color-circle:  pink;
+
 
 .circle  {
-  background: $red;
+  background: $bg-color-circle;
 	border-radius: 50px;
   width: $default-size ;
   height: $default-size ;
