@@ -1,10 +1,11 @@
-//colors
-$red: red;
-$default-size: 100px;
+$bg-color-oval:  pink;
+$height-oval: 100px;
+$width-oval: $height-oval* 2;
+
 
 .oval {
-  width: $default-size * 2;
-  height: $default-size;
-	background: $red;
+  width: $width-oval;
+  height: $height-oval;
+	background: $bg-color-oval;
   border-radius: 100px / 50px;
 }

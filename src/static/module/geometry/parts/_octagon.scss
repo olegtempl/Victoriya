@@ -1,20 +1,21 @@
-//colors
-$red: red;
-$color_gallery_approx: #eee;
+$bg-color-octagon:  pink;
+$color-gallery-approx: #eee;
+$width-octagon: 100px;
+$height-octagon: 100px;
 
 .octagon {
-	width: 100px;
-	height: 100px;
-	background: $red;
+	width: $width-octagon;
+	height: $height-octagon;
+	background: $bg-color-octagon;
 	position: relative;
 	&:before {
 		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
-		border-bottom: 29px solid $red;
-		border-left: 29px solid $color_gallery_approx;
-		border-right: 29px solid $color_gallery_approx;
+		border-bottom: 29px solid $bg-color-octagon;
+		border-left: 29px solid $color-gallery-approx;
+		border-right: 29px solid $color-gallery-approx;
 		width: 42px;
 		height: 0;
 	}
@@ -23,9 +24,9 @@ $color_gallery_approx: #eee;
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		border-top: 29px solid $red;
-		border-left: 29px solid $color_gallery_approx;
-		border-right: 29px solid $color_gallery_approx;
+		border-top: 29px solid $bg-color-octagon;
+		border-left: 29px solid $color-gallery-approx;
+		border-right: 29px solid $color-gallery-approx;
 		width: 42px;
 		height: 0;
 	}

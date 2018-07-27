@@ -1,8 +1,9 @@
-//colors
-$red: red;
+$bg-color-square:  pink;
+$width-square: 100px;
+$height-square: 100px;
 
 .square {
-	width: 100px;
-	height: 100px;
-	background: $red;
+	width: $width-square;
+	height: $height-square;
+	background: $bg-color-square;
 }

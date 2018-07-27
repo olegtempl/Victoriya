@@ -1,8 +1,10 @@
-//colors
-$red: red;
+$bg-color-rectangle:  pink;
+$width-rectangle: 200px;
+$height-rectangle: 100px;
+
 
 .rectangle {
-	width: 200px;
-	height: 100px;
-	background: $red;
+	width: $width-rectangle;
+	height: $height-rectangle;
+	background: $bg-color-rectangle;
 }

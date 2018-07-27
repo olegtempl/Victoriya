@@ -1,12 +1,13 @@
-//colors
-$red: red;
+$bg-color-pentagon:  pink;
+$width-pentagon: 200px;
+$height-pentagon: 100px;
 
 .pentagon {
 	position: relative;
 	width: 54px;
 	border-width: 50px 18px 0;
 	border-style: solid;
-	border-color: $red transparent;
+	border-color: $bg-color-pentagon transparent;
 	&:before {
 		content: "";
 		position: absolute;
@@ -16,6 +17,6 @@ $red: red;
 		left: -18px;
 		border-width: 0 45px 35px;
 		border-style: solid;
-		border-color: transparent transparent $red;
+		border-color: transparent transparent $bg-color-pentagon;
 	}
 }

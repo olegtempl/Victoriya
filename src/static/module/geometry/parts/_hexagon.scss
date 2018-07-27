@@ -1,10 +1,11 @@
-//colors
-$red: red;
+$bg-color-hexagon:  pink;
+$width-hexagon: 100px;
+$height-hexagon: 55px;
 
 .hexagon {
-	width: 100px;
-	height: 55px;
-	background: $red;
+	width: $width-hexagon;
+	height: $height-hexagon;
+	background: $bg-color-hexagon;
 	position: relative;
 	&:before {
 		content: "";
@@ -15,7 +16,7 @@ $red: red;
 		height: 0;
 		border-left: 50px solid transparent;
 		border-right: 50px solid transparent;
-		border-bottom: 25px solid $red;
+		border-bottom: 25px solid $bg-color-hexagon;
 	}
 	&:after {
 		content: "";
@@ -26,6 +27,6 @@ $red: red;
 		height: 0;
 		border-left: 50px solid transparent;
 		border-right: 50px solid transparent;
-		border-top: 25px solid $red;
+		border-top: 25px solid $bg-color-hexagon;
 	}
 }

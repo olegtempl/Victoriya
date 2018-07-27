@@ -1,9 +1,10 @@
-//colors
-$red: red;
+$bg-color-parallelogram:  pink;
+$width-parallelogram: 180px;
+$height-parallelogram: 100px;
 
 .parallelogram {
-	width: 180px;
-	height: 100px;
-  background: $red;
+	width: $width-parallelogram;
+	height: $height-parallelogram;
+  background: $bg-color-parallelogram;
   transform: skew(20deg);
 }

@@ -1,9 +1,10 @@
-//colors
-$red:  red;
+$bg-color-triangle:  pink;
+$width-triangle: 100px;
+$height-triangle: 100px;
 
 .triangle-bottomleft {
 	width: 0;
 	height: 0;
-	border-bottom: 100px solid $red;
-	border-right: 100px solid transparent;
+	border-bottom: $width-triangle solid $bg-color-triangle;
+	border-right: $height-triangle solid transparent;
 }
