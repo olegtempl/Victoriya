@@ -10,7 +10,7 @@
       "html": "build/",
       "js": "build/js/",
       "css": "build/styles/",
-      "images": "build/images/**/*",
+      "images": "build/images",
       "fonts": "build/fonts/**/*"
    },
    "prodaction": {
