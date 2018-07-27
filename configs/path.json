@@ -3,7 +3,7 @@
       "pug": "src/static/*.pug",
       "js": "src/static/",
       "scss": "src/static/**/**/*.scss",
-      "images": "src/static/",
+      "images": "src/images/",
       "fonts": "src/fonts/"
    },
    "build": {
