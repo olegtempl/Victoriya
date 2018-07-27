@@ -1,21 +1,10 @@
 .fixed_footer {
   width: 100%;
   height: 350px;
-  background: #111;
+  background: $color-bg-footer;
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: -100;
 }
 
-.fixed_footer p {
-  color: #696969;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 50px;
-  -moz-column-gap: 50px;
-  column-gap: 50px;
-  font-size: 1em;
-  font-weight: 300;
-}
