@@ -1,0 +1,23 @@
+/*
+  Brand colors
+*/
+$brand-primary:         #1abc9c;
+$brand-secondary:       #9b59b6;
+$brand-dark:            #18232f;
+$brand-light:           #34495e;
+
+$color-success:         #4caf50;
+$color-info:            #5bc0de;
+$color-warning:         #f0ad4e;
+$color-error:           #e74c3c;
+
+$gray:                  #dee6ea;
+$gray-light:            #edf3f6;
+$deep-blue:             #171722; // Deprecated
+$white:                 #ffffff;
+
+
+
+@import 'parts/background-colors';
+@import 'parts/text-colors';
+@import 'parts/components-colors'

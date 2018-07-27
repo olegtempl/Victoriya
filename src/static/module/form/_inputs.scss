@@ -1,0 +1,108 @@
+/* 
+  Inputs
+*/
+.input {
+  background-color: $form-bg-color;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+
+  :focus,
+  :active {
+    background-color: lighten($form-bg-color, 5%);
+  }
+
+  &.full-width {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  input {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: $form-text-color;
+    height: 44px;
+    line-height: 44px;
+    margin-bottom: 0;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+
+    @include breakpoint(bp-medium) {
+      padding: 8px 15px;
+    }
+  }
+}
+
+// input with icon
+.input-with-icon {
+  position: relative;
+
+  input {
+    padding-right: 42px;
+  }
+
+  .input-icon {
+    color: $text-gray;
+    margin-top: -6px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+
+    &.fa-search {
+      color: $brand-primary;
+      margin-top: -7px;
+    }
+  }
+
+  // button styles (pe. search)
+  button.input-icon {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+// input icon
+.input-icon {
+  input {
+    padding: 0;
+    width: 0;
+  }
+
+  i {
+    padding: 14px 15px 14px 12px;
+  }
+}
+
+
+/**
+ *  Input group
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="input-group {{ $errors->first('email', 'has-error') }}">
+ *     <div class="input full-width ">
+ *         <input type="email" class="form-control" name="email" placeholder="email address" value="{{{ Input::old('email') }}}">
+ *     </div>
+ *     <span class="help-block">{{ $errors->first('email', ':message') }}</span>
+ *  </div>
+ *
+ */
+
+.input-group {
+  margin-bottom: 20px;
+
+  .textarea,
+  .input,
+  .select {
+    margin-bottom: 0;
+  }
+}

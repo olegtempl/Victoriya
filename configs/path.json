@@ -1,9 +1,9 @@
 {
    "src": {
-      "pug": "src/pug/*.pug",
-      "js": "src/js/",
-      "scss": "src/styles/**/*.scss",
-      "images": "src/images/",
+      "pug": "src/static/*.pug",
+      "js": "src/static/",
+      "scss": "src/static/**/**/*.scss",
+      "images": "src/static/",
       "fonts": "src/fonts/"
    },
    "build": {
@@ -21,10 +21,10 @@
       "fonts": "prodaction/fonts/"
    },
    "watch": {
-      "pug": "src/pug/**/**/*.pug",
+      "pug": "src/static/**/**/*.pug",
       "js": "src/js/**/*.js",
-      "scss": "src/styles/**/*.scss",
-      "images": "src/images/**/*",
+      "scss": "src/static/**/*.scss",
+      "images": "src/static/**/*",
       "fonts": "src/fonts/**/*"
    },
    "tests": {

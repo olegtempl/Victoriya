@@ -1,0 +1,107 @@
+/**
+ *                BUTTONS
+ */
+
+.button {
+  $button-meta: map-get($button-sizes, sm);
+
+  background-color: $button-bg-color;
+  border: 1px solid $button-border-color;
+  border-radius: $button-border-radius;
+  color: $button-text-color;
+  display: inline-block;
+  font-family: $basefont;
+  font-size: map-get($button-meta, fontSize);
+  font-weight: 700;
+  line-height: #{map-get($button-meta, lineHeight)}em;
+  margin: 10px;
+  padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity .2s ease-in-out;
+  white-space: nowrap;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $text-body;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @import 'buttons/btn-sizes';
+  @import 'buttons/btn-colors';
+
+
+  // icons on buttons
+  i {
+    margin-bottom: -2%;
+    margin-left: .8em;
+    margin-right: .8em;
+    position: relative;
+    transition: all .3s ease;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &::before {
+      float: left;
+    }
+
+    // fix vertical position on large icons
+    &.fa-lg{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button-link {
+  color: $brand-primary;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  i {
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: -2px;
+    margin-left: 4px;
+    margin-right: 8px;
+    transition: all .3s ease;_buttons
+
+    &::before {
+      float: left;
+    }
+  }
+  // (animation rotating icon)
+  &.button-link-rotated {
+    i {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+@import 'buttons/btn-group';

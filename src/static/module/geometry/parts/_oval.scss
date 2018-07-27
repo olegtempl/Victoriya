@@ -1,0 +1,10 @@
+//colors
+$red: red;
+$default-size: 100px;
+
+.oval {
+  width: $default-size * 2;
+  height: $default-size;
+	background: $red;
+  border-radius: 100px / 50px;
+}

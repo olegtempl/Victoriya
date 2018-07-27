@@ -1,0 +1,18 @@
+/*
+  Text colors
+*/
+$text-color:            $white;       // deprecated. Use $text-body instead.
+$text-body:             $text-color;
+$text-gray:             #969da6;
+
+$text-color-map: (
+  primary:              $brand-primary,
+  secondary:            $brand-secondary,
+  body:                 $text-body,
+  gray:                 $text-gray,
+  green:                $color-success,
+  success:              $color-success,
+  red:                  $color-error,
+  error:                $color-error,
+  warning:              $color-warning
+);

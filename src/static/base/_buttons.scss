@@ -1,0 +1,13 @@
+/**
+ *                BUTTONS
+ */
+
+// reset default buttons
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+// modules rules the buttons styles
+@import 'module/buttons';

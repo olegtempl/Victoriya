@@ -1,0 +1,106 @@
+/**
+ *  FORM GROUP
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="form-group">
+ *    <div class="input form-group-item">
+ *      <input type="text" name="" id="" placeholder="Search an app and start tracking...">
+ *    </div>
+ *    <div class="select form-group-item">
+ *      <select class="class">
+ *        <option value="asd">asd</option>
+ *        <option value="asfdasd">asfdasd</option>
+ *      </select>
+ *      <i class="js-select-opener fa fa-angle-down fa-2"></i>
+ *    </div>
+ *  </div>
+ */
+
+ .form-group {
+  background-color: $form-bg-color;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  .textarea,
+  .input,
+  .select {
+    margin-bottom: 0;
+  }
+
+  .form-group-item {
+    border: 0;
+    border-radius: 0;
+    margin-right: 0;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+// forms in row (reduce space between grid columns)
+.form-row {
+  margin-left: -3px!important;
+  margin-right: -3px!important;
+}
+
+.form-row div[class^="col"] {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+/**
+ *  FORM COLLAPSE (items in row without gap between them)
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <div class="form-collapse">
+ *    <div class="input item item-main">
+ *      <input id="name" placeholder="Klingon search" type="text" />
+ *    </div>
+ *    <div class="select item">
+ *      <select name="country-code" id="country-code">
+ *        <option value="AO"> Angola</option>
+ *      </select>
+ *      <i class="fa fa-angle-down fa-2"></i>
+ *    </div>
+ *    <button class="item button button-primary">
+ *      Search
+ *    </button>
+ *  </div>
+ **/
+
+.form-collapse {
+  display: flex;
+  margin-bottom: 20px;
+
+  .item-main {
+    flex: 1;
+  }
+
+  .item {
+    border-radius: 0;
+    font-size: 15px;
+    margin: 0;
+
+    &:first-child {
+      border-bottom-left-radius: $radius;
+      border-top-left-radius: $radius;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: $radius;
+      border-top-right-radius: $radius;
+    }
+
+    &:not(:last-child) {
+      border-right: 0;
+    }
+  }
+}

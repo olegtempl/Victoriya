@@ -1,0 +1,95 @@
+/*
+  Geometry
+*/
+
+
+.parts-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  .circle-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .polygon-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 50px;
+  }
+
+  .square-form,
+  .triangle-form-wrap   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .triangle-form{
+    &-angle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250px;
+    }
+
+    &-tailspin {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  .square,
+  .rectangle,
+  .trapezoid,
+  .parallelogram,
+  .pentagon,
+  .hexagon,
+  .octagon,
+  .circle,
+  .oval,
+  .triangle-topleft,
+  .triangle-topright,
+  .triangle-bottomright,
+  .triangle-bottomleft,
+  .triangle-up,
+  .triangle-down {
+    margin-right: 24px;
+    margin-bottom: 30px;
+  }
+  .parallelogram {
+    margin-left: 15px;
+  }
+
+}
+
+
+// Square form
+@import 'parts/square';
+@import 'parts/rectangle';
+@import 'parts/trapezoid';
+@import 'parts/parallelogram';
+// Circle form
+@import 'parts/circle';
+@import 'parts/oval';
+// Polygon form
+@import 'parts/pentagon';
+@import 'parts/hexagon';
+@import 'parts/octagon';
+// Triangles form
+@import 'parts/triangle-topleft';
+@import 'parts/triangle-topright';
+@import 'parts/triangle-bottomright';
+@import 'parts/triangle-bottomleft';
+@import 'parts/triangle-up';
+@import 'parts/triangle-down';
+

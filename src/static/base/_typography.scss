@@ -1,0 +1,52 @@
+/**
+  * TYPOGRAPHY
+ */
+
+
+// Размеры текста меняются только в этом файле
+
+body {
+  font: #{$font-weight-base} #{$font-size-base}/#{$line-height-base} $basefont;
+  color: $text-body;
+
+  @include breakpoint(bp-medium) {
+    font-size: $font-size-base-medium;
+  }
+
+  @include breakpoint(bp-large) {
+    font-size: $font-size-base-large;
+  }
+}
+
+img {
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba($brand-primary, .8);
+  }
+
+  &:focus {
+    color: $brand-primary;
+  }
+}
+
+// modules rules
+@import 'module/typography/typography';
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $heading-weight;
+}

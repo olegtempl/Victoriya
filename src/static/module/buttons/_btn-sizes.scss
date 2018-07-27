@@ -1,0 +1,56 @@
+/* 
+  Button sizes
+*/
+
+&.button {
+  &-md {
+    $button-meta: map-get($button-sizes, md);
+
+    border-radius: $button-border-radius;
+    font-size: map-get($button-meta, fontSize);
+    line-height: #{map-get($button-meta, lineHeight)}em;
+    padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
+
+    @include breakpoint(bp-large) {
+      padding: map-get($button-meta, paddingTB) (map-get($button-meta, paddingLR) + 10px);
+    }
+  }
+
+  &-xs {
+    $button-meta: map-get($button-sizes, xs);
+
+    border-radius: $button-border-radius;
+    font-size: map-get($button-meta, fontSize);
+    line-height: #{map-get($button-meta, lineHeight)}em;
+    padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
+
+  }
+
+  &-lg {
+    $button-meta: map-get($button-sizes, lg);
+
+    border-radius: $button-border-radius;
+    font-size: map-get($button-meta, fontSize);
+    line-height: #{map-get($button-meta, lineHeight)}em;
+    padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
+    @include breakpoint(bp-large) {
+      $button-meta: map-get($button-sizes, hugeLg);
+
+      border-radius: $button-border-radius;
+      font-size: map-get($button-meta, fontSize);
+      line-height: #{map-get($button-meta, lineHeight)}em;
+      padding: map-get($button-meta, paddingTB) map-get($button-meta, paddingLR);
+    }
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &-large {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container-small-maxwidth;
+    width: 100%;
+  }
+}

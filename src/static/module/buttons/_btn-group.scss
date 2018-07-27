@@ -1,0 +1,20 @@
+// button group
+.button-group {
+  white-space: nowrap;
+
+  .button {
+    display: inline-block;
+    margin: 0;
+
+    &:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-right: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}

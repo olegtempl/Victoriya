@@ -1,0 +1,69 @@
+/* 
+  Button colors
+*/ 
+&.button-primary {
+  background-color: $brand-primary;
+  border: 1px solid $brand-primary;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+&.button-secondary {
+  background-color: $brand-secondary;
+  border: 1px solid $brand-secondary;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+&.button-transparent {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+&.button-white {
+  background-color: $white;
+  border: 1px solid $white;
+  color: $brand-primary;
+}
+
+&.button-green {
+  background-color: $color-success;
+  border-color: $color-success;
+  color: $white;
+}
+
+&.button-red {
+  background-color: $color-error;
+  border-color: $color-error;
+  color: $white;
+}
+
+// types
+&.button-outlined {
+  background-color: transparent;
+  border: 1px solid $brand-primary;
+  color: $brand-primary;
+}
+
+&.button-disabled {
+  cursor: default;
+  opacity: .4;
+}
+
+&.button-only-icon {
+  height: 43px;
+  line-height: 43px;
+  padding: 0;
+  width: 43px;
+
+  i {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

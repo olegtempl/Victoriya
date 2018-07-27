@@ -1,0 +1,45 @@
+
+/*
+  Background colors
+*/
+/*
+  Background-colors blocks in page
+*/
+
+//  body
+$color-bg-body:                 #2e4865;
+//  header
+$color-bg-header:               rgba(91, 192, 222, 1);
+$color-bd-nav:                  rgba(91, 192, 222, 1);
+//  sidebar
+$color-bg-sidebar:              #2e4865;
+//  main
+$color-bg-main:                 #2e4865;
+//  footer
+$color-bg-footer:               #2e4865;
+
+
+
+// Borders-color
+$border-color:          #465f78;
+
+// Shadows-color
+$shadow-color:          rgba(0, 0, 0, .2);
+$box-shadow:            0 0 5px $shadow-color;
+
+/*
+  Background colors MAP
+*/
+$background-color-map: (
+  'primary':              $brand-primary,
+  'dark':                 $brand-dark,
+  'secondary':            $brand-secondary,
+  'white':                $white,
+  'success':              $color-success,
+  'info':                 $color-info,
+  'warning':              $color-warning,
+  'error':                $color-error,
+  'gray':                 $gray,
+  'gray-light':           $gray-light
+);
+
