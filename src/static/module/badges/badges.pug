@@ -1,29 +1,39 @@
-section.section
-    h2.text-md Badges
-    .row
-        .col-xs-12.col-md-6
-            h2.text-sm.text-gray Sizes
-            ul.badges-list
-                li.badges-list-item.badge-xs
-                    | small
-                li.badges-list-item
-                    | default
-                li.badges-list-item.badge-lg
-                    | large
-        .col-xs-12.col-md-6
-            h2.text-sm.text-gray Colors
-            ul.badges-list
-                li.badges-list-item
-                    | default
-                li.badges-list-item.badge-primary
-                    | primary
-                li.badges-list-item.badge-secondary
-                    | secondary
-                li.badges-list-item.badge-dark
-                    | dark
-                li.badges-list-item.badge-success
-                    | success
-                li.badges-list-item.badge-warning
-                    | warning
-                li.badges-list-item.badge-error
-                    | error
+include ../mixins
+
+
+.timeline-image
+  img.rounded.img-fluid(src='images/2.jpg', alt='')
+.timeline-panel
+  section.section
+    .timeline-heading
+      h3.text-lg Badges
+      h4.text-md Badges sizes
+    .timeline-body
+      ul.badges-list
+        li.badges-list-item.badge-xs
+          +tooltipSmSpan('Small size badge', 'bottom', 'small')
+        li.badges-list-item
+          +tooltipSmSpan('Default size badge', 'bottom', 'default')
+        li.badges-list-item.badge-lg
+          +tooltipSmSpan('Large size badge', 'right', 'large')
+  section.section
+    .timeline-heading
+      h4.text-md Badges colors
+    .timeline-body
+      ul.badges-list
+        li.badges-list-item.badge-primary
+          +tooltipSmSpan('Primary color badge', 'bottom', 'Primary')
+        li.badges-list-item.badge-secondary
+          +tooltipSmSpan('Secondary color badge', 'bottom', 'secondary')
+        li.badges-list-item.badge-dark
+          +tooltipSmSpan('Dark color badge', 'bottom', 'dark')
+        li.badges-list-item.badge-success
+          +tooltipSmSpan('Success color badge', 'bottom', 'success')
+        li.badges-list-item.badge-warning
+          +tooltipSmSpan('Warning color badge', 'bottom', 'warning')
+        li.badges-list-item.badge-error
+          +tooltipSmSpan('Error color badge', 'bottom', 'error')
+        li.badges-list-item
+          +tooltipSmSpan('Default color badge', 'right', 'default')
+      section.section
+        +goToNavigation

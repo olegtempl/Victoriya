@@ -1,5 +1,8 @@
+include ../mixins
+
+
 section.section
-    h2.text-md Text modifiers
+    h2.text-md.text-center Text modifiers
     .row
         .col-xs-12.col-md-6
             h2.text-sm.text-gray Default
@@ -7,7 +10,7 @@ section.section
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                | consequat. Duis aute irure dolor 
+                | consequat. Duis aute irure dolor
                 a(href='#', title='in reprehenderit') in reprehenderit
                 |  in voluptate velit esse
                 |                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -113,3 +116,8 @@ section.section
                 | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 | cillum dolore eu fugiat nulla pariatur.
+
+
+.section(style='margin-bottom: 60px;')
+    .aligner-center-horitzontal.aligner-center-vertical(style='height:40px;')
+      +goToNavigation

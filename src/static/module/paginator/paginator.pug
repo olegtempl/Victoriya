@@ -1,37 +1,48 @@
-section.section
-    h2.text-md Paginator
-    .row
-        .col-xs-12.col-md-6
-            h2.text-sm.text-gray Default
-            ul.paginator-list
-                li.paginator-list-item
-                    a.paginator-list-link(href='#')
-                        i.fa.fa-angle-left
-                        |  Prev
-                li.paginator-list-item
-                    a.paginator-list-link(href='#') 1
-                li.paginator-list-item
-                    a.paginator-list-link.active(href='#') 2
-                li.paginator-list-item
-                    a.paginator-list-link(href='#') 3
-                li.paginator-list-item
-                    a.paginator-list-link(href='#')
-                        | Next 
-                        i.fa.fa-angle-right
-        .col-xs-12.col-md-6
-            h2.text-sm.text-gray Compact
-            ul.paginator-list.paginator-compact
-                li.paginator-list-item
-                    a.paginator-list-link(href='#')
-                        i.fa.fa-angle-left
-                        |  Prev
-                li.paginator-list-item
-                    a.paginator-list-link(href='#') 1
-                li.paginator-list-item
-                    a.paginator-list-link.active(href='#') 2
-                li.paginator-list-item
-                    a.paginator-list-link(href='#') 3
-                li.paginator-list-item
-                    a.paginator-list-link(href='#')
-                        | Next 
-                        i.fa.fa-angle-right
+include ../mixins
+
+
+li
+  .timeline-image
+    img.rounded(src='images/1.jpg', alt='')
+  .timeline-panel
+    section.section
+      .timeline-heading
+        h4.text-lg Paginator
+        h4.text-md Default
+      .timeline-body
+        ul.paginator-list
+          li.paginator-list-item
+            a.paginator-list-link(href='#')
+              i.fa.fa-angle-left
+              +tooltipSmA('Go to previous page', 'bottom', 'Prev')
+          li.paginator-list-item
+            +tooltipPaginator('Go to page № 1', 'bottom', '1')
+          li.paginator-list-item
+            +tooltipPaginator('Go to page № 2', 'bottom', '2')
+          li.paginator-list-item
+            +tooltipPaginator('Go to page № 3', 'bottom', '3')
+          li.paginator-list-item
+            a.paginator-list-link(href='#')
+              i.fa.fa-angle-right
+              +tooltipSmA('Go to next page', 'bottom', 'Next')
+    section.section
+      .timeline-heading
+        h4.text-md Compact
+      .timeline-body
+        ul.paginator-list.paginator-compact
+          li.paginator-list-item
+            a.paginator-list-link(href='#')
+              i.fa.fa-angle-left
+              +tooltipSmA('Go to previous page', 'bottom', 'Prev')
+            li.paginator-list-item
+              +tooltipPaginator('Go to page № 1', 'bottom', '1')
+            li.paginator-list-item
+            +tooltipPaginator('Go to page № 2', 'bottom', '2')
+            li.paginator-list-item
+            +tooltipPaginator('Go to page № 3', 'bottom', '3')
+            li.paginator-list-item
+              a.paginator-list-link(href='#')
+                i.fa.fa-angle-right
+                +tooltipSmA('Go to next page', 'bottom', 'Next')
+        section.section
+          +goToNavigation

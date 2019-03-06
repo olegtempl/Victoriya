@@ -1,0 +1,38 @@
+mixin tooltipMd(textTooltip, positionTooltip, textSpan)
+  span(data-tooltip= textTooltip, data-position= positionTooltip).text-md= textSpan
+
+
+
+mixin tooltipRaiting(textTooltip, positionTooltip, textSpan)
+  span(data-tooltip= textTooltip, data-position= positionTooltip).circle-rating-number= textSpan
+
+mixin tooltipPaginator(textTooltip, positionTooltip, textSpan)
+  a(data-tooltip= textTooltip, data-position= positionTooltip, href='#').paginator-list-link= textSpan
+
+mixin tooltipTabDefault(textTooltip, positionTooltip, textSpan)
+  a(data-tooltip= textTooltip, data-position= positionTooltip, href='#').tab= textSpan
+
+mixin tooltipTabActive(textTooltip, positionTooltip, textSpan)
+  a(data-tooltip= textTooltip, data-position= positionTooltip, href='#').tab.active= textSpan
+
+
+
+
+mixin tooltipSmSpan(textTooltip, positionTooltip, textSpan)
+  span(data-tooltip= textTooltip, data-position= positionTooltip)= textSpan
+
+mixin tooltipMdP(textTooltip, positionTooltip, textA)
+  span(data-tooltip= textTooltip, data-position= positionTooltip)= textA
+
+mixin tooltipSmA(textTooltip, positionTooltip, textA)
+  span(data-tooltip= textTooltip, data-position= positionTooltip)= textA
+
+mixin tooltipSmLinkAnchorA(textTooltip, positionTooltip, textA, anchorOnPage)
+  a(data-tooltip= textTooltip, data-position= positionTooltip, href= anchorOnPage)= textA
+
+mixin tooltipSmAnchorA(textTooltip, positionTooltip, textA, anchorOnPage)
+  a(data-tooltip= textTooltip, data-position= positionTooltip, name= anchorOnPage)= textA
+
+mixin goToNavigation
+  .container.section.border-top.border-bottom(style="margin-top: 40px;")
+    a(data-tooltip= 'Go to start the page', data-position= 'bottom' , href="#top").text-md Back to top

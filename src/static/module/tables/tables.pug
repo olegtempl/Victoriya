@@ -1,5 +1,8 @@
+include ../mixins
+
+
 section.section
-    h2.text-md Tables
+    h2.text-md.text-center Tables
     .row
         .col-xs-12.col-md-6
             h2.text-sm.text-gray Standard
@@ -47,3 +50,8 @@ section.section
                     td(data-th='Second column') Three
                     td(data-th='Third column')
                         | A whirlwind of looting, a firestorm of fear. Men began to feed on men. A whirlwind of looting, a firestorm of fear. Men began to feed on men.
+
+.section
+    .aligner-center-horitzontal.aligner-center-vertical(style='height:40px;')
+      +goToNavigation
+

@@ -1,10 +1,31 @@
-section.section
-    h2.text-md Typography sizes
-    h3.text-sm.text-gray.text-with-subtitle text-lg
-    p.text-lg.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
-    h3.text-sm.text-gray.text-with-subtitle text-md
-    p.text-md.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
-    h3.text-sm.text-gray.text-with-subtitle text-sm
-    p.text-sm.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
-    h3.text-sm.text-gray.text-with-subtitle text-xs
-    p.text-xs.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
+include ../mixins
+
+li.timeline-inverted
+  .timeline-image
+    img.rounded.img-fluid(src='images/2.jpg', alt='')
+  .timeline-panel
+    .timeline-heading
+      h3.text-lg Typography
+      h4.text-md Typography sizes
+    section.section
+      .timeline-heading
+        h3.text-lg.text-with-subtitle Text-lg
+      .timeline-body
+        p.text-lg.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    section.section
+      .timeline-heading
+        h3.text-md.text-with-subtitle Text-md
+      .timeline-body
+        p.text-md.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    section.section
+      .timeline-heading
+        h3.text-sm.text-with-subtitle Text-sm
+      .timeline-body
+        p.text-sm.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    section.section
+      .timeline-heading
+        h3.text-xs.text-with-subtitle Text-xs
+      .timeline-body
+        p.text-xs.text-gray Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        section.section
+          +goToNavigation

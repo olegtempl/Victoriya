@@ -1,7 +1,14 @@
-section.section
-    h2.text-md Buttons
-    h2.text-sm.text-gray Button colors
-    div
+include ../mixins
+
+li
+  .timeline-image
+    img.rounded(src='images/1.jpg', alt='')
+  .timeline-panel
+    section.section
+      .timeline-heading
+        h4.text-lg Buttons
+        h4.text-md Button colors
+      .timeline-body
         button.button.block-mobile default
         button.button.button-primary.block-mobile primary
         button.button.button-outlined.block-mobile outlined
@@ -11,25 +18,34 @@ section.section
         button.button.button-green.block-mobile green
         button.button.button-red.block-mobile red
         button.button.button-transparent.block-mobile transparent
-    h2.text-sm.text-gray Buttons with icon
-    div
+    section.section
+      .timeline-heading
+        h4.text-md  Buttons with icon
+      .timeline-body
         button.button.block-mobile
-            span Button
-            i.fa.fa-hand-spock-o
+          span Button
+          i.fa.fa-hand-spock-o
         button.button.block-mobile
-            i.fa.fa-hand-spock-o
-            span Button
-        span.block-mobile.text-center
-            button.button.button-only-icon
-                i.fa.fa-thumbs-o-up
-    h2.text-sm.text-gray Buttons group
-    .button-group
-        button.button Button
-        button.button Button
-        button.button Button
-    h2.text-sm.text-gray Button sizes
-    div
-        button.button.button-lg.block-mobile button-lg
-        button.button.button-md.block-mobile button-md
-        button.button.block-mobile Button default
+          i.fa.fa-hand-spock-o
+          span Button
+        span.block-mobile
+          button.button.button-only-icon
+            i.fa.fa-thumbs-o-up
+    section.section
+      .timeline-heading
+        h4.text-md  Buttons group
+      .timeline-body
+          .button-group
+              button.button Button
+              button.button Button
+              button.button Button
+    section.section
+      .timeline-heading
+        h4.text-md  Button sizes
+      .timeline-body
         button.button.button-xs.block-mobile button-xs
+        button.button.button-md.block-mobile button-md
+        button.button.button-lg.block-mobile button-lg
+        button.button.block-mobile Button default
+        section.section
+          +goToNavigation

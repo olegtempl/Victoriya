@@ -1,5 +1,7 @@
+include ../mixins
+
 section.section
-    h2.text-md  Forms
+    h2.text-md.text-center Forms
     .row
         .col-xs-12.col-md-6
             label.label(for='name') Name
@@ -52,29 +54,7 @@ section.section
             label.label(for='message-error') Message
             textarea#message-error.textarea.error
             p.text-error.text-xs $error message
-    .row
-        .col-xs-6.col-md-3
-            h3.text-sm.text-gray Radio buttons
-            .radio
-                input#radio1(name='radio', type='radio', value='')
-                label(for='radio1') Radio button 1
-            .radio
-                input#radio2(name='radio', type='radio', value='')
-                label(for='radio2') Radio button 2
-            .radio
-                input#radio3(name='radio', type='radio', value='')
-                label(for='radio3') Radio button 3
-        .col-xs-6.col-md-3
-            h3.text-sm.text-gray Checkboxes
-            .checkbox
-                input#checkbox1(name='keywords', type='checkbox', value='')
-                label(for='checkbox1') Checkbox 1
-            .checkbox
-                input#checkbox2(name='keywords', type='checkbox', value='')
-                label(for='checkbox2') Checkbox 2
-            .checkbox
-                input#checkbox3(name='keywords', type='checkbox', value='')
-                label(for='checkbox3') Checkbox 3
+
     h3.text-sm.text-gray Form row
     .row
         .col-xs-12.col-md-6
@@ -125,7 +105,7 @@ section.section
                 .input.item.item-main
                     input#name(placeholder='Klingon search', type='text')
                 button.item.button.button-primary
-                    i.fa.fa-search.fa-lg   
+                    i.fa.fa-search.fa-lg
     .row
         .col-xs-12.col-md-6
             .form-collapse
@@ -133,9 +113,9 @@ section.section
                     select#country-code(name='country-code')
                         option Vincent
                         option Jules
-                        option Mia 
+                        option Mia
                         option Butch
-                        option Winston 
+                        option Winston
                     i.fa.fa-angle-down.fa-2
                 .select.item
                     select#country-code(name='country-code')
@@ -151,10 +131,19 @@ section.section
                     i.fa.fa-angle-down.fa-2
                 .select.item
                     select#country-code(name='country-code')
-                        option Shaw 
+                        option Shaw
                         option Kelly
-                        option Doyle 
+                        option Doyle
                         option Lt. William
                         option Singleton
                         option Billie
                     i.fa.fa-angle-down.fa-2
+
+.section(style='margin-bottom: 60px;')
+    .aligner-center-horitzontal.aligner-center-vertical(style='height:40px;')
+      +goToNavigation
+
+
+
+
+

@@ -1,25 +1,33 @@
-.container
+include ../mixins
+
+.timeline-image
+  img.rounded.img-fluid(src='images/2.jpg', alt='')
+section.section
+  .timeline-panel
     section.section
-        h2.text-md Borders
-        .row
-            .col-xs-12.col-md-4
-                h3.text-sm.text-gray Border top + border bottom
-                .container.section.border-top.border-bottom
-                    br
-            .col-xs-12.col-md-4
-                h3.text-sm.text-gray Border right + border left
-                .container.section.border-right.border-left
-                    br
-            .col-xs-12.col-md-4
-                h3.text-sm.text-gray Bordered
-                .container.section.bordered
-                    br
-        .container
-            .row
-                .col-xs-12.col-md-4
-                    h3.text-sm.text-gray Bordered and circle
-                    .bordered-rounded-angle
-                        #left_top.corner-angle
-                        #left_bottom.corner-angle
-                        #right_top.corner-angle
-                        #right_bottom.corner-angle
+      .timeline-heading
+        h3.text-lg  Borders
+        +tooltipMd('Bordered container', 'bottom', 'Bordered')
+      .timeline-body
+        .container.section.bordered
+    section.section
+      .timeline-heading
+        +tooltipMd('Border-top and border-bottom container', 'bottom', 'Border-top + border-bottom')
+      .timeline-body
+        .container.section.border-top.border-bottom
+    section.section
+      .timeline-heading
+        +tooltipMd('Border-right and border-left container', 'right', 'Border-right + border-left')
+      .timeline-body
+        .container.section.border-right.border-left
+    section.section
+      +goToNavigation
+      //- section.section
+      //-   .timeline-heading
+      //-     h4.text-md Border circle
+      //-   .timeline-body
+      //-     .citate.text-center
+      //-     .left_top.corner
+      //-     .left_bottom.corner
+      //-     .right_top.corner
+      //-     .right_bottom.corner

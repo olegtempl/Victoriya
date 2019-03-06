@@ -1,0 +1,31 @@
+section.section
+  .row
+    h3.text-md.text-center Radio buttons and Checkboxes
+    .aligner-space-around
+      .container-md
+        h3.text-sm.text-gray Radio buttons
+        .radio
+            input#radio1(name='radio', type='radio', value='')
+            label(for='radio1') Radio button 1
+        .radio
+            input#radio2(name='radio', type='radio', value='')
+            label(for='radio2') Radio button 2
+        .radio
+            input#radio3(name='radio', type='radio', value='')
+            label(for='radio3') Radio button 3
+        h3.text-sm.text-gray Checkboxes
+        .checkbox
+            input#checkbox1(name='keywords', type='checkbox', value='')
+            label(for='checkbox1') Checkbox 1
+        .checkbox
+            input#checkbox2(name='keywords', type='checkbox', value='')
+            label(for='checkbox2') Checkbox 2
+        .checkbox
+            input#checkbox3(name='keywords', type='checkbox', value='')
+            label(for='checkbox3') Checkbox 3
+
+
+
+.section(style='margin-bottom: 60px;')
+    .aligner-center-horitzontal.aligner-center-vertical(style='height:40px;')
+      +goToNavigation

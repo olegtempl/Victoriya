@@ -118,14 +118,18 @@ button.text-gray {
   font-family: 'Lato', sans-serif;
 }
 
+.text-small-caps {
+	font-variant: small-caps;
+}
+
 // titles after titles
 .text-with-subtitle {
   margin-bottom: 0!important;
 
-  + .text-huge,
-  + .text-big,
-  + .text-medium,
-  + .text-small, {
+  + .text-lg,
+  + .text-bg,
+  + .text-md,
+  + .text-sm, {
     margin-top: .5em;
   }
 }

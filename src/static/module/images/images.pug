@@ -1,21 +1,31 @@
-section.section
-    h2.text-md Image modifiers
+include ../mixins
+.container
+  section.section
     .row
-        .col-xs-12.col-md-6
-            h2.text-sm.text-gray Circle
-            .row
-                .col-xs-4
-                    img.rounded(src='img/img1.jpg', alt='Image 1', width='100%')
-                .col-xs-4
-                    img.rounded(src='img/img2.jpg', alt='Image 2', width='100%')
-                .col-xs-4
-                    img.rounded(src='img/img3.jpg', alt='Image 3', width='100%')
-        .col-xs-12.col-md-6
-            h2.text-sm.text-gray Rounded corners
-            .row
-                .col-xs-4
-                    img.rounded-corners(src='img/img4.jpg', alt='Image 4', width='100%')
-                .col-xs-4
-                    img.rounded-corners(src='img/img5.jpg', alt='Image 5', width='100%')
-                .col-xs-4
-                    img.rounded-corners(src='img/img6.jpg', alt='Image 6', width='100%')
+      .col-xs-12.col-sm-12.col-md-12.col-lg-12
+        h2.text-md.text-center Image modifiers
+        .aligner-space-around
+          .col-xs-2.col-sm-2.col-md-2.col-lg-2
+            h3.text-sm.text-gray.text-center Circle
+            .aligner-center-horitzontal.aligner-center-vertical
+              img.rounded(src='images/1.jpg', alt='Image circle form', width='52%')
+          .col-xs-2.col-sm-2.col-md-2.col-lg-2
+            h3.text-sm.text-gray.text-center Rounded corners
+            .aligner-center-horitzontal.aligner-center-vertical
+              img.rounded-corners(src='images/1.jpg', alt='Image rounded corners', width='52%')
+          .col-xs-2.col-sm-2.col-md-2.col-lg-2
+            h3.text-sm.text-gray.text-center Oval form
+            .aligner-center-horitzontal.aligner-center-vertical
+              img.oval(src='images/1.jpg', alt='Image oval form', width='20%')
+          .col-xs-2.col-sm-2.col-md-2.col-lg-2
+            h3.text-sm.text-gray.text-center Parallelogram form
+            .aligner-center-horitzontal.aligner-center-vertical
+              img.parallelogram(src='images/1.jpg', alt='Image parallelogram form', width='20%')
+          .col-xs-2.col-sm-2.col-md-2.col-lg-2
+            h3.text-sm.text-gray.text-center Square form
+            .aligner-center-horitzontal.aligner-center-vertical
+              img.square(src='images/1.jpg', alt='Image square form', width='40%')
+
+.section
+  .aligner-center-horitzontal.aligner-center-vertical(style='height:40px;')
+    +goToNavigation

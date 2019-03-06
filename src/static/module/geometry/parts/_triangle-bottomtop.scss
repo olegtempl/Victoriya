@@ -1,11 +1,12 @@
+//colors
 $bg-color-triangle:  pink;
 $width-triangle: 50px;
 $height-triangle: 100px;
 
-.triangle-down {
+.triangle-bottomtop {
 	width: 0;
 	height: 0;
 	border-left: $width-triangle solid transparent;
 	border-right: $width-triangle solid transparent;
-	border-top: $height-triangle solid $bg-color-triangle;
+	border-bottom: $height-triangle solid $bg-color-triangle;
 }

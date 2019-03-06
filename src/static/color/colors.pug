@@ -1,70 +1,111 @@
-section.section
-    h2.text-md Customizable colors
-    h3.text-sm.text-gray Brand ( primary / secondary )
-    .aligner-space-around
-        .flex-grow.background-primary
-            br
-            br
-        .flex-grow.background-secondary
-            br
-            br
-    h3.text-sm.text-gray Success / info / error / warning
-    .aligner-space-around
-        .flex-grow.background-success
-            br
-            br
-        .flex-grow.background-info
-            br
-            br
-        .flex-grow.background-warning
-            br
-            br
-        .flex-grow.background-error
-            br
-            br
-    h3.text-sm.text-gray Rating
-    .aligner-space-around
-        .flex-grow.background-rating1
-            br
-            br
-        .flex-grow.background-rating2
-            br
-            br
-        .flex-grow.background-rating3
-            br
-            br
-        .flex-grow.background-rating4
-            br
-            br
-        .flex-grow.background-rating5
-            br
-            br
-        .flex-grow.background-rating6
-            br
-            br
-        .flex-grow.background-rating7
-            br
-            br
-        .flex-grow.background-rating8
-            br
-            br
-        .flex-grow.background-rating9
-            br
-            br
-        .flex-grow.background-rating10
-            br
-            br
-    h3.text-sm.text-gray Others
-    .aligner-space-around
-        .flex-grow.background-white
-            br
-            br
-        .flex-grow.background-gray-light
-            br
-            br
-        .flex-grow.background-gray
-            br
-            br
-        .flex-grow.background-dark
-            br
-            br
+include ../module/mixins
+
+
+li.timeline-inverted
+  .timeline-image
+    img.rounded.img-fluid(src='images/2.jpg', alt='')
+  .timeline-panel
+    section.section
+      .timeline-heading
+        h3.text-lg Colors
+        h4.text-md Customizable colors
+    section.section
+      .timeline-heading
+        h5.text-sm.text-gray Brand ( primary / secondary )
+      .timeline-body
+        .aligner-space-around
+            .flex-grow.background-primary
+              h5.text-sm.text-center Primary
+                br
+                br
+            .flex-grow.background-secondary
+              h5.text-sm.text-center Secondary
+                br
+                br
+    section.section
+      .timeline-heading
+        h5.text-sm.text-gray Success / info / error / warning
+      .timeline-body
+        .aligner-space-around
+            .flex-grow.background-success
+              h5.text-sm.text-center Success
+                br
+                br
+            .flex-grow.background-info
+              h5.text-sm.text-center Info
+                br
+                br
+            .flex-grow.background-warning
+              h5.text-sm.text-center Error
+                br
+                br
+            .flex-grow.background-error
+              h5.text-sm.text-center Warning
+                br
+                br
+    section.section
+      .timeline-heading
+        h5.text-sm.text-gray Rating
+      .timeline-body
+        .aligner-space-around
+            .flex-grow.background-rating1
+              h5.text-sm.text-center 1
+                br
+                br
+            .flex-grow.background-rating2
+              h5.text-sm.text-center 2
+                br
+                br
+            .flex-grow.background-rating3
+              h5.text-sm.text-center 3
+                br
+                br
+            .flex-grow.background-rating4
+              h5.text-sm.text-center 4
+                br
+                br
+            .flex-grow.background-rating5
+              h5.text-sm.text-center 5
+                br
+                br
+            .flex-grow.background-rating6
+              h5.text-sm.text-center 6
+                br
+                br
+            .flex-grow.background-rating7
+              h5.text-sm.text-center 7
+                br
+                br
+            .flex-grow.background-rating8
+              h5.text-sm.text-center 8
+                br
+                br
+            .flex-grow.background-rating9
+              h5.text-sm.text-center 9
+                br
+                br
+            .flex-grow.background-rating10
+              h5.text-sm.text-center 10
+                br
+                br
+    section.section
+      .timeline-heading
+        h5.text-sm.text-gray Others
+      .timeline-body
+        .aligner-space-around
+            .flex-grow.background-white
+              h5.text-sm.text-center
+                br
+                br
+            .flex-grow.background-gray-light
+                br
+                br
+            .flex-grow.background-gray
+                br
+                br
+            .flex-grow.background-dark
+                br
+                br
+      section.section
+        +goToNavigation
+

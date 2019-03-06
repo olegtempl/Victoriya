@@ -7,7 +7,8 @@ $tooltipe-triangle-color: red;
 
 
 a[data-tooltip].top,
-span[data-tooltip].top {
+span[data-tooltip].top,
+p[data-tooltip].top {
 	&:before,
 	&:after {
 		transform: translateY(10px);
@@ -20,7 +21,8 @@ span[data-tooltip].top {
 }
 
 a[data-tooltip].right,
-span[data-tooltip].right {
+span[data-tooltip].right,
+p[data-tooltip].right {
 	&:before,
 	&:after {
 		transform: translateX(0px);
@@ -33,7 +35,8 @@ span[data-tooltip].right {
 }
 
 a[data-tooltip].bottom,
-span[data-tooltip].bottom {
+span[data-tooltip].bottom,
+p[data-tooltip].bottom {
 	&:before,
 	&:after {
 		transform: translateY(-10px);
@@ -46,7 +49,8 @@ span[data-tooltip].bottom {
 }
 
 a[data-tooltip].left,
-span[data-tooltip].left {
+span[data-tooltip].left,
+p[data-tooltip].left {
 	&:before,
 	&:after {
 		transform: translateX(0px);
@@ -59,7 +63,8 @@ span[data-tooltip].left {
 }
 
 a[data-tooltip],
-span[data-tooltip] {
+span[data-tooltip],
+p[data-tooltip] {
 	position: relative;
 
 	&:after,
@@ -106,14 +111,16 @@ span[data-tooltip] {
 
 // top tooltip
 a[data-tooltip][data-position="top"]:before,
-span[data-tooltip][data-position="top"]:before {
+span[data-tooltip][data-position="top"]:before,
+p[data-tooltip][data-position="top"]:before {
 	bottom: 100%;
 	left: -130%;
 	margin-bottom: 10px;
 }
 
 a[data-tooltip][data-position="top"]:after,
-span[data-tooltip][data-position="top"]:after {
+span[data-tooltip][data-position="top"]:after,
+p[data-tooltip][data-position="top"]:after {
   border-top-color: $tooltipe-triangle-color;
 	border-bottom: none;
 	bottom: 101%;
@@ -122,14 +129,16 @@ span[data-tooltip][data-position="top"]:after {
 }
 // left tooltip
 a[data-tooltip][data-position="left"]:before,
-span[data-tooltip][data-position="left"]:before {
+span[data-tooltip][data-position="left"]:before,
+p[data-tooltip][data-position="left"]:before {
 	top: -12%;
 	right: 100%;
 	margin-right: 10px;
 }
 
 a[data-tooltip][data-position="left"]:after,
-span[data-tooltip][data-position="left"]:after  {
+span[data-tooltip][data-position="left"]:after,
+p[data-tooltip][data-position="left"]:after  {
   border-left-color: $tooltipe-triangle-color;
 	border-right: none;
 	top: calc(50% - 3px);
@@ -139,14 +148,16 @@ span[data-tooltip][data-position="left"]:after  {
 }
 // right tooltip
 a[data-tooltip][data-position="right"]:before,
-span[data-tooltip][data-position="right"]:before {
+span[data-tooltip][data-position="right"]:before,
+p[data-tooltip][data-position="right"]:before {
 	top: -5%;
 	left: 100%;
 	margin-left: 10px;
 }
 
 a[data-tooltip][data-position="right"]:after,
-span[data-tooltip][data-position="right"]:after {
+span[data-tooltip][data-position="right"]:after,
+p[data-tooltip][data-position="right"]:after {
 	border-right-color: $tooltipe-triangle-color;
 	border-left: none;
 	top: calc(50% - 6px);
@@ -155,14 +166,16 @@ span[data-tooltip][data-position="right"]:after {
 
 // bottom tooltip
 a[data-tooltip][data-position="bottom"]:before,
-span[data-tooltip][data-position="bottom"]:before  {
+span[data-tooltip][data-position="bottom"]:before,
+p[data-tooltip][data-position="bottom"]:before  {
 	top: 100%;
 	left: -130%;
 	margin-top: 10px;
 }
 
 a[data-tooltip][data-position="bottom"]:after,
-span[data-tooltip][data-position="bottom"]:after {
+span[data-tooltip][data-position="bottom"]:after,
+p[data-tooltip][data-position="bottom"]:after {
 	border-bottom-color: $tooltipe-triangle-color;
 	border-top: none;
 	top: 100%;

@@ -2,6 +2,15 @@
  *                FORMS
  */
 
+ // modules rules inputs styles
+@import 'module/inputs/input';
+// modules rules form group & others form styless
+@import 'module/form/form';
+// modules rules the select styles
+@import 'module/form/select';
+// modules rules the select styles
+@import 'module/typography/typography';
+
 // prevent input default appearence on webkit
 input,
 textarea {
@@ -14,7 +23,8 @@ label {
 
   &.label {
     @extend .text-gray;
-    @extend .text-small;
+    @extend .text-sm;
+
   }
 }
 
@@ -48,8 +58,6 @@ textarea {
 }
 
 
-// modules rules the select styles
-@import 'module/form/select';
 
 // Specific selector for error handling in mobonaut checkout. Must delete ASAP.
 label.error {
@@ -231,10 +239,7 @@ input[type=radio]:checked + label:before {
 }
 
 
-// modules rules inputs styles
-@import 'module/form/inputs';
-// modules rules form group & others form styless
-@import 'module/form/form';
+
 
 @keyframes radioAndCheckboxAnimation {
   0% {

@@ -1,11 +1,17 @@
+include ../mixins
+
 .container
-	section
-		h2.text-md Message bars
-		.message-bar.background-success
-			p Success
-		.message-bar.background-info
-			p Info
-		.message-bar.background-warning
-			p Warning
-		.message-bar.background-error
-			p Error
+  section
+    h2.text-md.text-center Message bars
+    .message-bar.background-success
+      p Success
+    .message-bar.background-info
+      p Info
+    .message-bar.background-warning
+      p Warning
+    .message-bar.background-error
+      p Error
+
+.section
+  .aligner-center-horitzontal.aligner-center-vertical(style='height:40px;')
+    +goToNavigation

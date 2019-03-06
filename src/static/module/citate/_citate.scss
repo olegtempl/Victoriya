@@ -9,7 +9,7 @@ $color-text-citate: #0ff14c;
 $color-bdr-citate: #1658b1;
 
 
-#citate {
+.citate {
  height:150px;
  width:370px;
  border: 1px solid $color-bdr-citate;
@@ -18,42 +18,42 @@ $color-bdr-citate: #1658b1;
  color:$color-text-citate;
  padding:15px;
 
-	
+
 	span {
 // нужно для сокрытия общего бордера
   background: $color-bg-body;
   color: $color-text-title-citate;
   padding:0 10px;
-  position:relative; 
+  position:relative;
   top:-28px;
 	}
-	
+
 	.corner {
 	  height:30px;
 	  width:30px;
 	  border-radius:50%;
 	  border:1px solid #fff;
-	  transform:rotate(-45deg);  
+	  transform:rotate(-45deg);
 	  position:absolute;
 	  background: $color-bg-body;
 	}
 
-	#left_top{
+  .left_top{
 	  top:-16px;
 	  left:-16px;
 	  border-color:transparent transparent $color-bdr-citate transparent;
 	}
-	#right_top{
+	.right_top{
 	  top:-16px;
 	  right:-16px;
 	  border-color:transparent transparent transparent $color-bdr-citate;
 	}
-	#left_bottom{
+	.left_bottom{
 	  bottom:-16px;
 	  left:-16px;
 	  border-color:transparent $color-bdr-citate transparent transparent ;
 	}
-	#right_bottom{
+	.right_bottom{
 	  bottom:-16px;
 	  right:-16px;
 	  border-color:$color-bdr-citate transparent transparent transparent;
@@ -66,7 +66,7 @@ $color-bdr-citate: #1658b1;
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Monoton|Rokkitt');
+// @import url('https://fonts.googleapis.com/css?family=Monoton|Rokkitt');
 
 
 // Цвет текст по диагонали
@@ -80,7 +80,7 @@ blockquote .grades-citate {
 .grade {
  font-family: "Monoton";
  text-transform: uppercase;
- font-gradeyle: normal; 
+ font-gradeyle: normal;
  color: $color-text-grade-citate;
  border-bottom:1vw double  $color-text-grade-citate;
  display: block;

@@ -1,15 +1,26 @@
-.col-xs-12.col-md-6
-    h2.text-md Tags
-    ul.tags
-        li
-            a.tag(href='#')  fantasy
-        li
-            a.tag(href='#')  fiction 
-        li
-            a.tag(href='#')  contemporary 
-        li
-            a.tag(href='#')  horror 
-        li
-            a.tag(href='#')  science-fiction 
-        li
-            a.tag(href='#')  thriller  
+include ../mixins
+
+
+li.timeline-inverted
+  .timeline-image
+    img.rounded.img-fluid(src='images/2.jpg', alt='')
+  .timeline-panel
+    section.section
+      .timeline-heading
+        h4.text-lg Tags
+      .timeline-body
+        ul.tags
+          li
+            +tooltipSmA('Fantasy tags', 'bottom', 'fantasy')
+          li
+            +tooltipSmA('Fiction tags', 'bottom', 'fiction')
+          li
+            +tooltipSmA('Contemporary tags', 'bottom', 'contemporary')
+          li
+            +tooltipSmA('Horror tags', 'bottom', 'horror')
+          li
+            +tooltipSmA('Science-fiction tags', 'bottom', 'science-fiction')
+          li
+            +tooltipSmA('Thriller tags', 'bottom', 'thriller')
+        section.section
+          +goToNavigation

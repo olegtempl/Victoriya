@@ -1,11 +1,22 @@
 $bg-color-trapezoid:  pink;
 $width-trapezoid: 100px;
-$height-trapezoid: 100px;
+$height-trapezoid: 0;
+$bdr-left: 50px;
+$bdr-right: 50px;
+
+// .trapezoid {
+// 	border-bottom: 100px solid $bg-color-trapezoid;
+// 	border-left: $bdr-left solid transparent;
+// 	border-right: $bdr-right solid transparent;
+// 	height: $height-trapezoid;
+// 	width: $width-trapezoid;
+// }
+
 
 .trapezoid {
-	border-bottom: $width-trapezoid solid $bg-color-trapezoid;
-	border-left: $height-trapezoid solid transparent;
-	border-right: $height-trapezoid solid transparent;
+	border-bottom: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
 	height: 0;
-	width: $width-trapezoid;
+	width: 100px;
 }

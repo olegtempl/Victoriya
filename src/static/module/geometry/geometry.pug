@@ -1,32 +1,44 @@
-.container
-	.row
-		.geometry-wrap
-      h3.text-sm.text-gray.text-center Square form
-      .square-form
-        .row
-          .square
-          .rectangle
-        .row
-          .trapezoid
+li.timeline-inverted
+  .timeline-image
+    img.rounded(src='images/1.jpg', alt='')
+  .timeline-panel
+    section.section
+      .timeline-heading
+        h4.text-lg Square forms
+        h5.text-sm.text-gray Square forms ( square / rectangle / parallelogram )
+      .timeline-body
+        .aligner-center-horitzontal.content-start
+          .square(style='margin: 0 10px 0 0;')
+          .rectangle(style='margin: 0 25px 0 0;')
           .parallelogram
-      h3.text-sm.text-gray.text-center Polygon form
-      .polygon-form
-          .pentagon
-          .hexagon
-          .octagon
-      h3.text-sm.text-gray.text-center Triangle form
-      .triangle-form-wrap
-        .triangle-form-angle
-          .triangle-topleft
-          .triangle-topright
-          .triangle-bottomleft
+    section.section
+      .timeline-heading
+        h4.text-md Polygon forms
+        h5.text-sm.text-gray Hexagon
+      .timeline-body
+        section.section
+          .hexagon(style='margin: 0 10px 0 0;')
+    section.section
+      .timeline-heading
+        h4.text-md Triangle forms
+        h5.text-sm.text-gray Triangle forms ( top-left / top-right/ bottom-left / bottom-right )
+      .timeline-body
+        .aligner-center-horitzontal.content-start
+          .triangle-topleft(style='margin: 0 10px 0 0;')
+          .triangle-topright(style='margin: 0 10px 0 0;')
+          .triangle-bottomleft(style='margin: 0 10px 0 0;')
           .triangle-bottomright
-        .triangle-form-tailspin
-          .triangle-down
-          .triangle-up
-      h3.text-sm.text-gray.text-center Circle form
-      .circle-form
-        .circle
-        .oval
-
-
+      .timeline-heading
+        h5.text-sm.text-gray Triangle forms ( top-botom / botom-top  )
+      .timeline-body
+        .aligner-center-horitzontal.content-start
+          .triangle-topbottom(style='margin: 0 10px 0 0;')
+          .triangle-bottomtop
+    section.section
+      .timeline-heading
+        h4.text-md Circle forms
+        h5.text-sm.text-gray Circle forms ( circle / oval )
+      .timeline-body
+        .aligner-center-horitzontal.content-start
+          .circle(style='margin: 0 10px 0 0;')
+          .oval
